@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My text editor </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+
+
+    <script>
+        module.exports = {
+            plugins: {
+                tailwindcss: {},
+                autoprefixer: {},
+            }
+        }
+    </script>
+
+    <style>
+    
+      
+    </style>
+</head>
+
+<body class="text-purple-600">
+
+    <header>
+
+    </header>
+
+
+    <main>
+        <section class="w-full  md:w-3/4 bg-gray-300 mx-auto mt-5 rounded h-auto p-4" >
+
+            <h1 class="text-2xl text-center font-medium pt-2 text-purple-600">My text editor </h1>
+
+            <div style="height: 500px;"
+                class="pb-5 w-3/4 border-2 border-purple-600 border-solid border-spacing-40 mx-auto h-auto mt-2 rounded p-3 overflow-hidden">
+                <div class="border-b-2 pb-2 border-purple-600 flex justify-between flex-wrap mb-5">
+                    <div class="flex">
+                        <button id="text-bold" class="px-3 mr-1 py-2 rounde-lg font-bold rounded">B</button>
+                        <button id="text-italic" class="px-3 py-2 mr-1 rounde-lg font-bold rounded">I</button>
+                        <button id="text-underline" class="px-3 py-2 mr-1 rounde-lg font-bold rounded">U</button>
+                    </div>
+                    <div id="btn-container" class="flex">
+                        <button id="align-left" class="px-3 mr-1 py-2 rounde-lg font-bold rounded-lg">Left
+                        </button>
+                        <button id="align-center" class="px-3 mr-1 py-2 rounde-lg font-bold  rounded-lg">Center</i>
+                        </button>
+                        <button id="align-right" class="px-3 mr-1 py-2 rounde-lg font-bold rounded-lg">Right</i>
+</button>
+                    </div>
+                    <div class="flex">
+                       <input class="border-none outline-none rounded mr-2" type="number" value="16" name="" id="font-size" style="height:30px; width:50px">
+                       <select class="mr-2 rounded" id="text-style" name="font" style="height:30px;">
+                        <option value="capitalize">Capitalize</option>
+                        <option value="lowercase">Lowercase</option>
+                        <option value="uppercase">Uppercase</option>
+                      </select>
+                 
+                      <input class="rounded" value="#9333ea" type="color" name="" id="font-color" style="height:30px;">
+                    </div>
+                </div>
+                <div class="pt-3 h-96" >
+                    <textarea  name="" id="main-text" cols="100" rows="10"
+                        class="w-full h-full border-none outline-none p-2  rounded-lg resize-none  focus:border-purple-600">This is sample text</textarea>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
